@@ -1,3 +1,7 @@
+// Usage:
+// Put this in the same directory as the code using it, then just call the
+// methods directly.
+
 // Encoder variables.
 int encoderClkPin = 3;  // Connected to CLK on KY-040
 int encoderDtPin = 2;  // Connected to DT on KY-040
@@ -20,14 +24,14 @@ int readEncoder() {
   if (aVal != encoderClkPinLast) {
     // The knob is rotating.
     encoderClkPinLast = aVal;
-    
+
     // For some reason the encoder counts twice per step? Get rid of that.
     if (skipNext) {
       skipNext = false;
       return 0;
     }
     skipNext = true;
-    
+
     if (digitalRead(encoderDtPin) != aVal) {
       // We're rotating CCW.
       return -1;
@@ -35,7 +39,7 @@ int readEncoder() {
       // CW.
       return 1;
     }
-  } 
-  
+  }
+
   return 0;
 }
