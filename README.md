@@ -12,19 +12,15 @@ I needed to keep my cat off the counter. How was I gonna do it? Machine learning
 
 ### Electronics
 
-*   [OPTIONAL] Buy an arduino for testing the mechanism
+*   [OPTIONAL] Buy an Uno-compatible Arduino for testing the mechanism
 *   Buy a [Google Coral Dev Board](https://coral.ai/products/dev-board) &
     [Camera](https://coral.ai/products/camera/)
 *   Buy 3? [standard-size servos capable of rotating at least 180°](https://smile.amazon.com/gp/product/B07BVR816V/)
 *   Buy a power supply capable of powering the servos (5V @ ~3A)
 
-#### Coral wiring (ML cat detection)
+#### Wiring
 
-TODO: figure out & document connections.
-
-#### Arduino wiring (Optional mechanism verification)
-
-TODO: figure out & document connections.
+TODO: figure out & document non-Arduino connections.
 
 ### Mechanism
 
@@ -54,13 +50,16 @@ TODO: document
 
 ### Arduino (Optional mechanism verification)
 
-#### Before you begin
-
-TODO: document setup
-
 #### Compiling & flashing
 
-TODO: document compilation
+Ensure you have the Arduino wired up properly as described in
+[arduino.ino](arduino/arduino.ino).
+
+Open [arduino.ino](arduino/arduino.ino) in Arduino IDE. Click `Tools` -> `Board`
+-> `Arduino Uno`. Connect the Uno to your computer via USB. Click `Sketch` ->
+`Upload`.
+
+See docs at top of [arduino.ino](arduino/arduino.ino) for usage.
 
 #### Using
 
