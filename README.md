@@ -38,6 +38,12 @@ TODO: pictures of where to put inserts, bolts, how things go together.
 
 #### Before you begin
 
+1.  Work through [the official getting started guide](https://coral.ai/docs/dev-board/get-started).
+    This will take several hours and lots of cables.
+2.  If you're interested in how the code in this repro work, check out
+    [this example code](https://github.com/google-coral/examples-camera/tree/master/nativeapp)
+    it's based on.
+
 TODO: document setup
 
 #### Compiling
